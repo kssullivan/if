@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>if... </title>
+    <link rel= "stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var Where = prompt("Where would you go to? To feel comfortable.");
+        if(Where === "home") {
+          var statement = "Do we all feel comfortable at home?";
+        } else if(Where === "somewhere warm") {
+          var statement = "But what about when it gets cold there?";
+        } else if(Where === "under a blanket") {
+          var statement = "Blankets need to be woven.";
+        } else {
+          var statement = Where + " can be sharp sometimes. Think: home, under a blanket, somwhere warm...";
+        }
+        $("h1").html(statement);
+
+        var Wheree = prompt("Where?");
+        if(Wheree === "home") {
+          var statement = "Do we all feel comfortable at home?";
+        } else if(Wheree === "somewhere warm") {
+          var statement = "But what about when it gets cold there?";
+        } else if(Wheree === "under a blanket") {
+          var statement = "Blankets need to be woven.";
+        } else {
+          var statement = "I see. " + Wheree + " is where you can be comfortable. Do you feel comfortable when you are at home? Under a blanket? Somewhere warm?";
+        }
+        $("h2").html(statement);
+
+
+        var Whereee = prompt("Okay. Tell me again. In which state would you feel most comfortable?");
+        if(Whereee === "home") {
+          var statement = "Do we all feel comfortable at home?";
+        } else if(Whereee === "somewhere warm") {
+          var statement = "But what about when it gets cold there?";
+        } else if(Whereee === "under a blanket") {
+          var statement = "Blankets need to be woven.";
+        } else {
+          var statement = Whereee + " sounds comfortable. Can I join?";
+        }
+        $("h3").html(statement);
+
+
+      });
+
+
+    </script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>wow, </h1>
+    <br>
+    <h2></h2>
+    <br>
+    <h3></h3>
+
+  </body>
+</html>
